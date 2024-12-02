@@ -1,6 +1,6 @@
 <?php 
 include "database.php";
-$sql_listar = "SELECT * FROM cadastro_cliente";
+$sql_listar = "SELECT * FROM cadastro_administração";
 $resultado = mysqli_query($conexao,$sql_listar);
 ?>
 <!DOCTYPE html>
@@ -11,6 +11,7 @@ $resultado = mysqli_query($conexao,$sql_listar);
     <title>Document</title>
 </head>
 <body>
+    <a href="http://localhost/trabalho_banco/home_administrador.php?">Voltar</a>
     <table>
         <thead>
             <th>Nome:</th>
@@ -25,10 +26,10 @@ $resultado = mysqli_query($conexao,$sql_listar);
             while ($dados = mysqli_fetch_assoc($resultado)):
             ?>
             <tr>
-                <td><?php echo $dados ["nome_cliente"]?></td>
-                <td><?php echo $dados ["email_cliente"]?></td>
-                <td><?php echo $dados ["senha_cliente"]?></td>
-                <td><?php echo $dados ["telefone_cliente"]?></td>
+                <td><?php echo $dados ["nome_adm"]?></td>
+                <td><?php echo $dados ["email_adm"]?></td>
+                <td><?php echo $dados ["senha_adm"]?></td>
+                <td><?php echo $dados ["telefone_adm"]?></td>
                 <td><a href="http://localhost/trabalho_banco/form_atualizar_cadastro.php?id= <?php echo $dados ['id']; ?>" >Atualizar</a></td>
                 <td><a href="excluir.php?id=<?php echo $dados ['id']; ?>">Excluir</a></td>
             </tr>

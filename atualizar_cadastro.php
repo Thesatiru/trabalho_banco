@@ -1,14 +1,14 @@
 <?php 
 include "database.php";
 
-$id_cliente = $_POST ['id_cliente'];
-$nome_cliente = $_POST ['nome_cliente'];
-$email_cliente = $_POST ['email_cliente'];
-$senha_cliente = $_POST ['senha_cliente'];
-$telefone_cliente = $_POST ['telefone_cliente'];
+$id_adm = $_POST ['id_adm'];
+$nome_adm = $_POST ['nome_adm'];
+$email_adm = $_POST ['email_adm'];
+$senha_adm = $_POST ['senha_adm'];
+$telefone_adm = $_POST ['telefone_adm'];
 
-$sql_update = "UPDATE cadastro_cliente SET nome_cliente = '$nome_cliente', email_cliente = '$email_cliente', senha_cliente = '$senha_cliente', telefone_cliente = '$telefone_cliente' 
-WHERE cadastro_cliente.id = '$id_cliente'";
+$sql_update = "UPDATE cadastro_administração SET nome_adm = '$nome_adm', email_adm = '$email_adm', senha_adm = '$senha_adm', telefone_adm = '$telefone_adm' 
+WHERE cadastro_administração.id = '$id_adm'";
 
 if (mysqli_query($conexao,$sql_update))
 {

@@ -7,7 +7,13 @@
 </head>
 <body>
     <form action="">
-    <a href=""></a>
+    <a href="http://localhost/trabalho_banco/administrar_cadastro.php">Administrar cadastros</a>
+    <br><br>
+    <a href="http://localhost/trabalho_banco/administrar_produtos.php/">Administrar produtos</a>
+    <br><br>
+    <a href="http://localhost/trabalho_banco/form_cadastrar_produto.php">Adicionar Produto</a>
+    <br><br>
+    <a href="http://localhost/trabalho_banco/form_cadastro_adm.php">Desconectar</a>
 
     
     
