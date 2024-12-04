@@ -1,17 +1,16 @@
 <?php
 include "database.php";
 
-$id_produto = $_POST ["id"];
+$id_produto = $_GET ['id'];
 
-$sql_excluir_produto = "DELETE FROM produtos_esportes WHERE produtos_esportes.id = '$id_produto'";
-echo "<h3>" . $sql_excluir_produto . "<h3>";
-mysqli_query($conexao,$sql_excluir_produto);
+$sql_excluir_id = "DELETE FROM produtos_esportes WHERE produtos_esportes.id = '$id_produto'";
+echo "<h3>" . $sql_excluir_id . "<h3>";
 
-if(mysqli_query($conexao,$sql_excluir_produto))
+if(mysqli_query($conexao,$sql_excluir_id))
 {
-    header("location:http://localhost/trabalho_banco/administrar_produtos.php/");
+    header("location:administrar_produtos.php");
 }
 else
 {
-    echo "Algo deu errado!";
+    echo "Erro ao excluir o cadastro!";
 }

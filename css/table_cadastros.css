@@ -1,0 +1,38 @@
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  
+  #customers td, #customers th {
+    border: 1px solid #000000;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: green;
+    color: white;
+  }
+#voltar {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+ #voltar:hover, #voltar:active {
+    background-color: rgb(255, 0, 0);
+    color: white;
+  }
+  .entrar:link {color: #ff0000;}
