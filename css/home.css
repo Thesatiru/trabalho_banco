@@ -1,5 +1,8 @@
+body {
+  background-color: rgb(243, 243, 243);
+}
 .direita {
-    text-align: end;
+text-align: end;
 }
 #cadastros {
     background-color: white;
@@ -51,6 +54,6 @@
     display: inline-block;
   }
   #desconectar:hover, #desconectar:active {
-    background-color: green;
+    background-color: rgb(211, 1, 1);
     color: white;
   }

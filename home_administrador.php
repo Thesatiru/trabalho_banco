@@ -8,7 +8,6 @@
 </head>
 <body>
     <div class="direita">
-    
     <form action="">
     <a href="http://localhost/trabalho_banco/administrar_cadastro.php" id="cadastros" >Administrar cadastros</a>
     <br><br>
@@ -18,12 +17,6 @@
     <br><br>
     <a href="http://localhost/trabalho_banco/form_cadastro_adm.php" id="desconectar">Desconectar</a>
     </div>
-
-    
-    
-
     </form>
-
-    
 </body>
 </html>

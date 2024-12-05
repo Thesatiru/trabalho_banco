@@ -1,6 +1,7 @@
+
 #customers {
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
+  font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse; 
     width: 100%;
   }
   
@@ -35,4 +36,4 @@
     background-color: rgb(255, 0, 0);
     color: white;
   }
-  .entrar:link {color: #ff0000;}
+  #entrar:link {color: #ff0000;}

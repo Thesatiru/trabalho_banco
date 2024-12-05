@@ -3,10 +3,10 @@ include "database.php";
 $sql_lista = "SELECT * FROM produtos_esportes";
 $resultado = mysqli_query($conexao,$sql_lista);
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -16,12 +16,12 @@ $resultado = mysqli_query($conexao,$sql_lista);
     <a href="http://localhost/trabalho_banco/home_administrador.php" id="voltar">Voltar</a>
     <table id="customers">
         <thead>
-            <th>Produtos:</th>
-            <th>Preço:</th>
-            <th>Descrição:</th>
-            <th>Estoque:</th>
-            <th>Atualizar:</th>
-            <th>excluir:</th>
+            <th>Produtos</th>
+            <th>Preço</th>
+            <th>Descrição</th>
+            <th>Estoque</th>
+            <th>Atualizar</th>
+            <th>Excluir</th>
         </thead>
         <tbody>
             <?php 
@@ -35,12 +35,11 @@ $resultado = mysqli_query($conexao,$sql_lista);
                 <div >
                     
                 <td><a href="http://localhost/trabalho_banco/form_atualizar_produto.php?id= <?php echo $dados ['id']; ?>">Atualizar</a></td>
-                <td><a href="excluir_produto.php?id=<?php echo $dados['id'];?>"class="entrar">Excluir</a></td>
+                <td><a href="excluir_produto.php?id=<?php echo $dados['id'];?>">Excluir</a></td>
                 </div>
             </tr>
         </tbody>
             <?php endwhile; ?>
     </table>
-    
 </body>
 </html>

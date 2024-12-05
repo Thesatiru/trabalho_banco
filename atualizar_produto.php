@@ -3,7 +3,7 @@ include "database.php";
 
 $id_produto = $_POST ['id_produto'];
 $nome_produto = $_POST ['nome_produto'];
-$preco_produto = $_POST ['nome_produto'];
+$preco_produto = $_POST ['preco_produto'];
 $descricao_produto = $_POST ['descricao_produto'];
 $estoque = $_POST ['estoque'];
 
